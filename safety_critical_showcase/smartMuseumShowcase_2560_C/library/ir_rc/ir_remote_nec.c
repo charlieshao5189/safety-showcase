@@ -11,9 +11,9 @@ void ir_init() {
 	OCR1A = ((F_CPU/1000000) * SAMPLE_RATIO)-1;; // Output Compare Registers (16 bit) OCR1BH and OCR1BL
     TCNT1 = 0;// initialize counter
 
-    DDRD &= ~(1 << IR_PIN);      //set IR_PIN to input
-    EICRA |= (1 << ISC31); 		/* Falling edge detection */
-    EIMSK |= (1 << INT3); 		/* External INT3 enable */
+    IR_DDR &= ~(1 << IR_PIN);      //set IR_PIN to input
+    EICRA |= (1 << ISC41); 		/* Falling edge detection */
+    EIMSK |= (1 << INT4); 		/* External INT3 enable */
 	sei();					// Enable interrupts at global level, set Global Interrupt Enable (I) bit
 
 	ir_reset();
@@ -46,7 +46,7 @@ ISR(TIMER1_COMPA_vect) {
 	total_cycles_counter++;
 }
 
-ISR(INT3_vect) {
+ISR(INT4_vect) {
 	ir_check_timeout();
 
 	switch (state) {

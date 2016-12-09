@@ -7,7 +7,8 @@
 #define F_CPU 16000000UL
 #endif
 
-#define IR_PIN PD3
+#define IR_PIN PE3
+#define IR_DDR DDRD
 
 
 /* Last edge direction */
@@ -58,15 +59,15 @@ volatile unsigned char newCommandFlag;
 
 /* Rising edge detection */
 void inline check_rising_edge() {
-	EICRA |= (1 << ISC31);
-	EICRA |= (1 << ISC30);
+	EICRB |= (1 << ISC41);
+	EICRB |= (1 << ISC40);
 	edge = EDGE_RISING;
 }
 
 /* Falling edge detection */
 void inline check_falling_edge() {
-	EICRA |= (1 << ISC31);
-	EICRA &= ~(1 << ISC30);
+	EICRB |= (1 << ISC41);
+	EICRB &= ~(1 << ISC40);
 	edge = EDGE_FALLING;
 }
 

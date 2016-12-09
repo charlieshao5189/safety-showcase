@@ -135,11 +135,10 @@ ISR(TIMER5_COMPA_vect) // TIMER5_CompareA_Handler (Interrupt Handler for Timer 5
         if(1 == alarmFlag)
         {
             tricolorled_toggle(LED_RED);
-            PORTA ^= (1 << DDA1); //active alarm
+            PORTA ^= ((1<<DDA3)|(1<<DDA2)|(1<<DDA1)|(1<<DDA0)); //active alarm buzzers and lights
         }
         irFlag = 1; //set irFlag, check IR remoter controller command
         ms_300_count = 0;
-
     }
 
 }
@@ -240,7 +239,7 @@ void HandleIR()
                 lcd_gotoxy(13, 1);
                 if(0 == securityEnableFlag)
                 {
-                    alarm_OFF();
+                    alarm_DIS();
                     lcd_puts("DIS");
                 }
                 else
