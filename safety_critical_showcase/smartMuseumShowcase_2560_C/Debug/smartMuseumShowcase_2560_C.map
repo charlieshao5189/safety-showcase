@@ -391,7 +391,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x17da
+.text           0x00000000     0x180e
  *(.vectors)
  .vectors       0x00000000       0xe4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega2560/avr6/crtatmega2560.o
                 0x00000000                __vector_default
@@ -432,12 +432,14 @@ END GROUP
  .init2         0x000000fa       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init2)
  *(.init3)
+ .init3         0x0000010a       0x1e main.o
+                0x0000010a                get_mcusr
  *(.init3)
  *(.init4)
- .init4         0x0000010a       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_copy_data.o)
-                0x0000010a                __do_copy_data
- .init4         0x00000124       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_clear_bss.o)
-                0x00000124                __do_clear_bss
+ .init4         0x00000128       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_copy_data.o)
+                0x00000128                __do_copy_data
+ .init4         0x00000142       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_clear_bss.o)
+                0x00000142                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -448,268 +450,268 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000134        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init9         0x00000152        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init9)
  *(.text)
- .text          0x0000013c        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x0000013c                __vector_38
-                0x0000013c                __vector_22
-                0x0000013c                __vector_28
-                0x0000013c                __vector_1
-                0x0000013c                __vector_32
-                0x0000013c                __vector_34
-                0x0000013c                __vector_24
-                0x0000013c                __vector_12
-                0x0000013c                __vector_55
-                0x0000013c                __vector_46
-                0x0000013c                __bad_interrupt
-                0x0000013c                __vector_6
-                0x0000013c                __vector_31
-                0x0000013c                __vector_35
-                0x0000013c                __vector_39
-                0x0000013c                __vector_23
-                0x0000013c                __vector_30
-                0x0000013c                __vector_45
-                0x0000013c                __vector_11
-                0x0000013c                __vector_54
-                0x0000013c                __vector_13
-                0x0000013c                __vector_19
-                0x0000013c                __vector_56
-                0x0000013c                __vector_7
-                0x0000013c                __vector_49
-                0x0000013c                __vector_41
-                0x0000013c                __vector_43
-                0x0000013c                __vector_27
-                0x0000013c                __vector_33
-                0x0000013c                __vector_52
-                0x0000013c                __vector_37
-                0x0000013c                __vector_44
-                0x0000013c                __vector_51
-                0x0000013c                __vector_9
-                0x0000013c                __vector_2
-                0x0000013c                __vector_21
-                0x0000013c                __vector_15
-                0x0000013c                __vector_36
-                0x0000013c                __vector_29
-                0x0000013c                __vector_40
-                0x0000013c                __vector_8
-                0x0000013c                __vector_26
-                0x0000013c                __vector_48
-                0x0000013c                __vector_14
-                0x0000013c                __vector_53
-                0x0000013c                __vector_10
-                0x0000013c                __vector_50
-                0x0000013c                __vector_16
-                0x0000013c                __vector_18
-                0x0000013c                __vector_20
-                0x0000013c                __vector_42
-                0x0000013e                . = ALIGN (0x2)
+ .text          0x0000015a        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x0000015a                __vector_38
+                0x0000015a                __vector_22
+                0x0000015a                __vector_28
+                0x0000015a                __vector_1
+                0x0000015a                __vector_32
+                0x0000015a                __vector_34
+                0x0000015a                __vector_24
+                0x0000015a                __vector_12
+                0x0000015a                __vector_55
+                0x0000015a                __vector_46
+                0x0000015a                __bad_interrupt
+                0x0000015a                __vector_6
+                0x0000015a                __vector_31
+                0x0000015a                __vector_35
+                0x0000015a                __vector_39
+                0x0000015a                __vector_23
+                0x0000015a                __vector_30
+                0x0000015a                __vector_45
+                0x0000015a                __vector_11
+                0x0000015a                __vector_54
+                0x0000015a                __vector_13
+                0x0000015a                __vector_19
+                0x0000015a                __vector_56
+                0x0000015a                __vector_7
+                0x0000015a                __vector_49
+                0x0000015a                __vector_41
+                0x0000015a                __vector_43
+                0x0000015a                __vector_27
+                0x0000015a                __vector_33
+                0x0000015a                __vector_52
+                0x0000015a                __vector_37
+                0x0000015a                __vector_44
+                0x0000015a                __vector_51
+                0x0000015a                __vector_9
+                0x0000015a                __vector_2
+                0x0000015a                __vector_21
+                0x0000015a                __vector_15
+                0x0000015a                __vector_36
+                0x0000015a                __vector_29
+                0x0000015a                __vector_40
+                0x0000015a                __vector_8
+                0x0000015a                __vector_26
+                0x0000015a                __vector_48
+                0x0000015a                __vector_14
+                0x0000015a                __vector_53
+                0x0000015a                __vector_10
+                0x0000015a                __vector_50
+                0x0000015a                __vector_16
+                0x0000015a                __vector_18
+                0x0000015a                __vector_20
+                0x0000015a                __vector_42
+                0x0000015c                . = ALIGN (0x2)
  *(.text.*)
  .text.ir_reset
-                0x0000013e       0x1a library/ir_rc/ir_remote_nec.o
-                0x0000013e                ir_reset
- .text.ir_init  0x00000158       0x52 library/ir_rc/ir_remote_nec.o
-                0x00000158                ir_init
+                0x0000015c       0x1a library/ir_rc/ir_remote_nec.o
+                0x0000015c                ir_reset
+ .text.ir_init  0x00000176       0x52 library/ir_rc/ir_remote_nec.o
+                0x00000176                ir_init
  .text.ir_check_command
-                0x000001aa        0xa library/ir_rc/ir_remote_nec.o
-                0x000001aa                ir_check_command
+                0x000001c8        0xa library/ir_rc/ir_remote_nec.o
+                0x000001c8                ir_check_command
  .text.ir_check_timeout
-                0x000001b4       0x42 library/ir_rc/ir_remote_nec.o
-                0x000001b4                ir_check_timeout
+                0x000001d2       0x42 library/ir_rc/ir_remote_nec.o
+                0x000001d2                ir_check_timeout
  .text.__vector_17
-                0x000001f6       0x70 library/ir_rc/ir_remote_nec.o
-                0x000001f6                __vector_17
+                0x00000214       0x70 library/ir_rc/ir_remote_nec.o
+                0x00000214                __vector_17
  .text.ir_handle_state_wait_edge_falling
-                0x00000266       0x18 library/ir_rc/ir_remote_nec.o
-                0x00000266                ir_handle_state_wait_edge_falling
+                0x00000284       0x18 library/ir_rc/ir_remote_nec.o
+                0x00000284                ir_handle_state_wait_edge_falling
  .text.ir_handle_state_start_edge_falling
-                0x0000027e       0xb6 library/ir_rc/ir_remote_nec.o
-                0x0000027e                ir_handle_state_start_edge_falling
+                0x0000029c       0xb6 library/ir_rc/ir_remote_nec.o
+                0x0000029c                ir_handle_state_start_edge_falling
  .text.ir_handle_state_start_edge_rising
-                0x00000334       0x18 library/ir_rc/ir_remote_nec.o
-                0x00000334                ir_handle_state_start_edge_rising
+                0x00000352       0x18 library/ir_rc/ir_remote_nec.o
+                0x00000352                ir_handle_state_start_edge_rising
  .text.ir_handle_state_bits_edge_falling
-                0x0000034c      0x196 library/ir_rc/ir_remote_nec.o
-                0x0000034c                ir_handle_state_bits_edge_falling
+                0x0000036a      0x196 library/ir_rc/ir_remote_nec.o
+                0x0000036a                ir_handle_state_bits_edge_falling
  .text.ir_handle_state_bits_edge_rising
-                0x000004e2       0x18 library/ir_rc/ir_remote_nec.o
-                0x000004e2                ir_handle_state_bits_edge_rising
+                0x00000500       0x18 library/ir_rc/ir_remote_nec.o
+                0x00000500                ir_handle_state_bits_edge_rising
  .text.ir_handle_state_stop
-                0x000004fa       0x46 library/ir_rc/ir_remote_nec.o
-                0x000004fa                ir_handle_state_stop
+                0x00000518       0x46 library/ir_rc/ir_remote_nec.o
+                0x00000518                ir_handle_state_stop
  .text.__vector_5
-                0x00000540       0xe4 library/ir_rc/ir_remote_nec.o
-                0x00000540                __vector_5
+                0x0000055e       0xe4 library/ir_rc/ir_remote_nec.o
+                0x0000055e                __vector_5
  .text.i2c_init
-                0x00000624        0xc library/lcd1602/i2cmaster.o
-                0x00000624                i2c_init
+                0x00000642        0xc library/lcd1602/i2cmaster.o
+                0x00000642                i2c_init
  .text.i2c_start
-                0x00000630       0x4e library/lcd1602/i2cmaster.o
-                0x00000630                i2c_start
+                0x0000064e       0x4e library/lcd1602/i2cmaster.o
+                0x0000064e                i2c_start
  .text.i2c_stop
-                0x0000067e       0x12 library/lcd1602/i2cmaster.o
-                0x0000067e                i2c_stop
+                0x0000069c       0x12 library/lcd1602/i2cmaster.o
+                0x0000069c                i2c_stop
  .text.i2c_write
-                0x00000690       0x24 library/lcd1602/i2cmaster.o
-                0x00000690                i2c_write
+                0x000006ae       0x24 library/lcd1602/i2cmaster.o
+                0x000006ae                i2c_write
  .text.lcd_read
-                0x000006b4       0x68 library/lcd1602/lcdpcf8574.o
+                0x000006d2       0x68 library/lcd1602/lcdpcf8574.o
  .text.lcd_waitbusy
-                0x0000071c       0x16 library/lcd1602/lcdpcf8574.o
+                0x0000073a       0x16 library/lcd1602/lcdpcf8574.o
  .text.toggle_e
-                0x00000732       0x10 library/lcd1602/lcdpcf8574.o
+                0x00000750       0x10 library/lcd1602/lcdpcf8574.o
  .text.lcd_write
-                0x00000742      0x138 library/lcd1602/lcdpcf8574.o
+                0x00000760      0x138 library/lcd1602/lcdpcf8574.o
  .text.lcd_command
-                0x0000087a       0x10 library/lcd1602/lcdpcf8574.o
-                0x0000087a                lcd_command
+                0x00000898       0x10 library/lcd1602/lcdpcf8574.o
+                0x00000898                lcd_command
  .text.lcd_gotoxy
-                0x0000088a       0x10 library/lcd1602/lcdpcf8574.o
-                0x0000088a                lcd_gotoxy
+                0x000008a8       0x10 library/lcd1602/lcdpcf8574.o
+                0x000008a8                lcd_gotoxy
  .text.lcd_clrscr
-                0x0000089a        0x6 library/lcd1602/lcdpcf8574.o
-                0x0000089a                lcd_clrscr
- .text.lcd_led  0x000008a0       0x24 library/lcd1602/lcdpcf8574.o
-                0x000008a0                lcd_led
+                0x000008b8        0x6 library/lcd1602/lcdpcf8574.o
+                0x000008b8                lcd_clrscr
+ .text.lcd_led  0x000008be       0x24 library/lcd1602/lcdpcf8574.o
+                0x000008be                lcd_led
  .text.lcd_home
-                0x000008c4        0x6 library/lcd1602/lcdpcf8574.o
-                0x000008c4                lcd_home
+                0x000008e2        0x6 library/lcd1602/lcdpcf8574.o
+                0x000008e2                lcd_home
  .text.lcd_putc
-                0x000008ca       0x3c library/lcd1602/lcdpcf8574.o
-                0x000008ca                lcd_putc
+                0x000008e8       0x3c library/lcd1602/lcdpcf8574.o
+                0x000008e8                lcd_putc
  .text.lcd_puts
-                0x00000906       0x1e library/lcd1602/lcdpcf8574.o
-                0x00000906                lcd_puts
+                0x00000924       0x1e library/lcd1602/lcdpcf8574.o
+                0x00000924                lcd_puts
  .text.lcd_init
-                0x00000924       0x8a library/lcd1602/lcdpcf8574.o
-                0x00000924                lcd_init
+                0x00000942       0x8a library/lcd1602/lcdpcf8574.o
+                0x00000942                lcd_init
  .text.pcf8574_init
-                0x000009ae       0x20 library/lcd1602/pcf8574.o
-                0x000009ae                pcf8574_init
+                0x000009cc       0x20 library/lcd1602/pcf8574.o
+                0x000009cc                pcf8574_init
  .text.pcf8574_getoutputpin
-                0x000009ce       0x2e library/lcd1602/pcf8574.o
-                0x000009ce                pcf8574_getoutputpin
+                0x000009ec       0x2e library/lcd1602/pcf8574.o
+                0x000009ec                pcf8574_getoutputpin
  .text.pcf8574_setoutput
-                0x000009fc       0x2c library/lcd1602/pcf8574.o
-                0x000009fc                pcf8574_setoutput
+                0x00000a1a       0x2c library/lcd1602/pcf8574.o
+                0x00000a1a                pcf8574_setoutput
  .text.pcf8574_setoutputpin
-                0x00000a28       0x68 library/lcd1602/pcf8574.o
-                0x00000a28                pcf8574_setoutputpin
+                0x00000a46       0x68 library/lcd1602/pcf8574.o
+                0x00000a46                pcf8574_setoutputpin
  .text.pcf8574_setoutputpinhigh
-                0x00000a90        0x6 library/lcd1602/pcf8574.o
-                0x00000a90                pcf8574_setoutputpinhigh
+                0x00000aae        0x6 library/lcd1602/pcf8574.o
+                0x00000aae                pcf8574_setoutputpinhigh
  .text.pcf8574_setoutputpinlow
-                0x00000a96        0x6 library/lcd1602/pcf8574.o
-                0x00000a96                pcf8574_setoutputpinlow
+                0x00000ab4        0x6 library/lcd1602/pcf8574.o
+                0x00000ab4                pcf8574_setoutputpinlow
  .text.LEDLIGHT_Timer4_PWM_ChannelA_Init
-                0x00000a9c       0x2c library/ledlight.o
-                0x00000a9c                LEDLIGHT_Timer4_PWM_ChannelA_Init
+                0x00000aba       0x2c library/ledlight.o
+                0x00000aba                LEDLIGHT_Timer4_PWM_ChannelA_Init
  .text.mfrc522_write
-                0x00000ac8       0x16 library/RFID/mfrc522.o
-                0x00000ac8                mfrc522_write
+                0x00000ae6       0x16 library/RFID/mfrc522.o
+                0x00000ae6                mfrc522_write
  .text.mfrc522_read
-                0x00000ade       0x12 library/RFID/mfrc522.o
-                0x00000ade                mfrc522_read
+                0x00000afc       0x12 library/RFID/mfrc522.o
+                0x00000afc                mfrc522_read
  .text.mfrc522_reset
-                0x00000af0        0x8 library/RFID/mfrc522.o
-                0x00000af0                mfrc522_reset
+                0x00000b0e        0x8 library/RFID/mfrc522.o
+                0x00000b0e                mfrc522_reset
  .text.mfrc522_init
-                0x00000af8       0x3a library/RFID/mfrc522.o
-                0x00000af8                mfrc522_init
+                0x00000b16       0x3a library/RFID/mfrc522.o
+                0x00000b16                mfrc522_init
  .text.mfrc522_to_card
-                0x00000b32      0x272 library/RFID/mfrc522.o
-                0x00000b32                mfrc522_to_card
+                0x00000b50      0x272 library/RFID/mfrc522.o
+                0x00000b50                mfrc522_to_card
  .text.mfrc522_request
-                0x00000da4       0x64 library/RFID/mfrc522.o
-                0x00000da4                mfrc522_request
+                0x00000dc2       0x64 library/RFID/mfrc522.o
+                0x00000dc2                mfrc522_request
  .text.mfrc522_get_card_serial
-                0x00000e08       0x6c library/RFID/mfrc522.o
-                0x00000e08                mfrc522_get_card_serial
+                0x00000e26       0x6c library/RFID/mfrc522.o
+                0x00000e26                mfrc522_get_card_serial
  .text.spi_init
-                0x00000e74       0x10 library/RFID/spi.o
-                0x00000e74                spi_init
+                0x00000e92       0x10 library/RFID/spi.o
+                0x00000e92                spi_init
  .text.spi_transmit
-                0x00000e84        0xc library/RFID/spi.o
-                0x00000e84                spi_transmit
+                0x00000ea2        0xc library/RFID/spi.o
+                0x00000ea2                spi_transmit
  .text.alarm_ON
-                0x00000e90       0x18 library/secuButton.o
-                0x00000e90                alarm_ON
+                0x00000eae       0x18 library/secuButton.o
+                0x00000eae                alarm_ON
  .text.alarm_DIS
-                0x00000ea8       0x10 library/secuButton.o
-                0x00000ea8                alarm_DIS
+                0x00000ec6       0x10 library/secuButton.o
+                0x00000ec6                alarm_DIS
  .text.securityInit
-                0x00000eb8       0x42 library/secuButton.o
-                0x00000eb8                securityInit
+                0x00000ed6       0x42 library/secuButton.o
+                0x00000ed6                securityInit
  .text.__vector_3
-                0x00000efa       0x5a library/secuButton.o
-                0x00000efa                __vector_3
+                0x00000f18       0x5a library/secuButton.o
+                0x00000f18                __vector_3
  .text.__vector_4
-                0x00000f54       0x5a library/secuButton.o
-                0x00000f54                __vector_4
+                0x00000f72       0x5a library/secuButton.o
+                0x00000f72                __vector_4
  .text.Servo_Timer3_FastPWM
-                0x00000fae       0x40 library/servo.o
-                0x00000fae                Servo_Timer3_FastPWM
+                0x00000fcc       0x40 library/servo.o
+                0x00000fcc                Servo_Timer3_FastPWM
  .text.SetServoPosition
-                0x00000fee       0x20 library/servo.o
-                0x00000fee                SetServoPosition
+                0x0000100c       0x20 library/servo.o
+                0x0000100c                SetServoPosition
  .text.tricolorled_onoff
-                0x0000100e       0x6c library/tricolorled.o
-                0x0000100e                tricolorled_onoff
+                0x0000102c       0x6c library/tricolorled.o
+                0x0000102c                tricolorled_onoff
  .text.triColorLed_init
-                0x0000107a       0x70 library/tricolorled.o
-                0x0000107a                triColorLed_init
+                0x00001098       0x70 library/tricolorled.o
+                0x00001098                triColorLed_init
  .text.tricolorled_toggle
-                0x000010ea       0x42 library/tricolorled.o
-                0x000010ea                tricolorled_toggle
+                0x00001108       0x42 library/tricolorled.o
+                0x00001108                tricolorled_toggle
  .text.dht_getdata
-                0x0000112c      0x15a library/dht.o
-                0x0000112c                dht_getdata
+                0x0000114a      0x15a library/dht.o
+                0x0000114a                dht_getdata
  .text.dht_gettemperaturehumidity
-                0x00001286        0x4 library/dht.o
-                0x00001286                dht_gettemperaturehumidity
+                0x000012a4        0x4 library/dht.o
+                0x000012a4                dht_gettemperaturehumidity
  .text.USART0_SETUP_9600_BAUD_ASSUME_1MHz_CLOCK
-                0x0000128a       0x1e library/uart.o
-                0x0000128a                USART0_SETUP_9600_BAUD_ASSUME_1MHz_CLOCK
+                0x000012a8       0x1e library/uart.o
+                0x000012a8                USART0_SETUP_9600_BAUD_ASSUME_1MHz_CLOCK
  .text.__vector_25
-                0x000012a8       0x14 library/uart.o
-                0x000012a8                __vector_25
+                0x000012c6       0x14 library/uart.o
+                0x000012c6                __vector_25
  .text.tiemr5_10ms_tick_configure
-                0x000012bc       0x28 main.o
-                0x000012bc                tiemr5_10ms_tick_configure
+                0x000012da       0x28 main.o
+                0x000012da                tiemr5_10ms_tick_configure
  .text.__vector_47
-                0x000012e4       0xb8 main.o
-                0x000012e4                __vector_47
+                0x00001302       0xb8 main.o
+                0x00001302                __vector_47
  .text.HandleTempHum
-                0x0000139c       0x70 main.o
-                0x0000139c                HandleTempHum
+                0x000013ba       0x70 main.o
+                0x000013ba                HandleTempHum
  .text.HandleRFID
-                0x0000140c       0x96 main.o
-                0x0000140c                HandleRFID
+                0x0000142a       0x96 main.o
+                0x0000142a                HandleRFID
  .text.HandleIR
-                0x000014a2      0x26e main.o
-                0x000014a2                HandleIR
+                0x000014c0      0x26e main.o
+                0x000014c0                HandleIR
  .text.lcdFormate
-                0x00001710       0x24 main.o
-                0x00001710                lcdFormate
- .text.main     0x00001734       0x2c main.o
-                0x00001734                main
- .text.libgcc   0x00001760       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_tablejump2.o)
-                0x00001760                __tablejump2__
+                0x0000172e       0x24 main.o
+                0x0000172e                lcdFormate
+ .text.main     0x00001752       0x42 main.o
+                0x00001752                main
+ .text.libgcc   0x00001794       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_tablejump2.o)
+                0x00001794                __tablejump2__
  .text.avr-libc
-                0x00001770       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr6\libc.a(itoa_ncheck.o)
-                0x00001770                __itoa_ncheck
+                0x000017a4       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr6\libc.a(itoa_ncheck.o)
+                0x000017a4                __itoa_ncheck
  .text.avr-libc
-                0x00001784       0x32 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr6\libc.a(utoa_ncheck.o)
-                0x00001784                __utoa_ncheck
-                0x00001786                __utoa_common
+                0x000017b8       0x32 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr6\libc.a(utoa_ncheck.o)
+                0x000017b8                __utoa_ncheck
+                0x000017ba                __utoa_common
  .text.avr-libc
-                0x000017b6       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr6\libc.a(strrev.o)
-                0x000017b6                strrev
-                0x000017d6                . = ALIGN (0x2)
+                0x000017ea       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr6\libc.a(strrev.o)
+                0x000017ea                strrev
+                0x0000180a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000017d6        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_exit.o)
-                0x000017d6                _exit
-                0x000017d6                exit
+ .fini9         0x0000180a        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_exit.o)
+                0x0000180a                _exit
+                0x0000180a                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -728,11 +730,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000017d6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_exit.o)
+ .fini0         0x0000180a        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x000017da                _etext = .
+                0x0000180e                _etext = .
 
-.data           0x00800200       0x44 load address 0x000017da
+.data           0x00800200       0x44 load address 0x0000180e
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -764,11 +766,11 @@ END GROUP
  *(.bss*)
  .bss.dataport  0x00800244        0x1 library/lcd1602/lcdpcf8574.o
                 0x00800244                dataport
- .bss.SwitchesValue.2271
+ .bss.SwitchesValue.2285
                 0x00800245        0x1 main.o
- .bss.ms_300_count.2258
+ .bss.ms_300_count.2272
                 0x00800246        0x1 main.o
- .bss.s_1_count.2257
+ .bss.s_1_count.2271
                 0x00800247        0x2 main.o
  .bss.irFlag    0x00800249        0x1 main.o
                 0x00800249                irFlag
@@ -795,14 +797,16 @@ END GROUP
                 0x0080026b                RFIDstr
                 0x0080027b                humidity
                 0x0080027c                PROVIDE (__bss_end, .)
-                0x000017da                __data_load_start = LOADADDR (.data)
-                0x0000181e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000180e                __data_load_start = LOADADDR (.data)
+                0x00001852                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080027c        0x0
+.noinit         0x0080027c        0x1
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
+ .noinit        0x0080027c        0x1 main.o
+                0x0080027c                mcusr_mirror
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x0080027c                _end = .
+                0x0080027d                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -879,7 +883,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x3d8
+.debug_aranges  0x00000000      0x3e0
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x80 library/ir_rc/ir_remote_nec.o
@@ -906,12 +910,12 @@ END GROUP
  .debug_aranges
                 0x00000338       0x50 library/uart.o
  .debug_aranges
-                0x00000388       0x50 main.o
+                0x00000388       0x58 main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3402
+.debug_info     0x00000000     0x34b0
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x3bd library/ir_rc/ir_remote_nec.o
  .debug_info    0x000003bd      0x1bd library/lcd1602/i2cmaster.o
@@ -925,9 +929,9 @@ END GROUP
  .debug_info    0x00001f1a      0x26c library/tricolorled.o
  .debug_info    0x00002186      0x45b library/dht.o
  .debug_info    0x000025e1      0x31f library/uart.o
- .debug_info    0x00002900      0xb02 main.o
+ .debug_info    0x00002900      0xbb0 main.o
 
-.debug_abbrev   0x00000000     0x1265
+.debug_abbrev   0x00000000     0x12bc
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x137 library/ir_rc/ir_remote_nec.o
  .debug_abbrev  0x00000137       0xe5 library/lcd1602/i2cmaster.o
@@ -941,9 +945,9 @@ END GROUP
  .debug_abbrev  0x00000a87      0x136 library/tricolorled.o
  .debug_abbrev  0x00000bbd      0x19f library/dht.o
  .debug_abbrev  0x00000d5c      0x1f7 library/uart.o
- .debug_abbrev  0x00000f53      0x312 main.o
+ .debug_abbrev  0x00000f53      0x369 main.o
 
-.debug_line     0x00000000     0x23bb
+.debug_line     0x00000000     0x245f
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x3f2 library/ir_rc/ir_remote_nec.o
  .debug_line    0x000003f2      0x2d4 library/lcd1602/i2cmaster.o
@@ -957,9 +961,9 @@ END GROUP
  .debug_line    0x000017cd      0x1f5 library/tricolorled.o
  .debug_line    0x000019c2      0x28d library/dht.o
  .debug_line    0x00001c4f      0x1be library/uart.o
- .debug_line    0x00001e0d      0x5ae main.o
+ .debug_line    0x00001e0d      0x652 main.o
 
-.debug_frame    0x00000000      0x98c
+.debug_frame    0x00000000      0x99c
  *(.debug_frame)
  .debug_frame   0x00000000      0x14c library/ir_rc/ir_remote_nec.o
  .debug_frame   0x0000014c       0xa0 library/lcd1602/i2cmaster.o
@@ -973,9 +977,9 @@ END GROUP
  .debug_frame   0x000006cc       0x44 library/tricolorled.o
  .debug_frame   0x00000710       0xac library/dht.o
  .debug_frame   0x000007bc       0xdc library/uart.o
- .debug_frame   0x00000898       0xf4 main.o
+ .debug_frame   0x00000898      0x104 main.o
 
-.debug_str      0x00000000      0xbfc
+.debug_str      0x00000000      0xc39
  *(.debug_str)
  .debug_str     0x00000000      0x341 library/ir_rc/ir_remote_nec.o
                                 0x3a1 (size before relaxing)
@@ -1001,8 +1005,8 @@ END GROUP
                                 0x28b (size before relaxing)
  .debug_str     0x000009b8      0x144 library/uart.o
                                 0x29c (size before relaxing)
- .debug_str     0x00000afc      0x100 main.o
-                                0x4d1 (size before relaxing)
+ .debug_str     0x00000afc      0x13d main.o
+                                0x517 (size before relaxing)
 
 .debug_loc      0x00000000     0x24d8
  *(.debug_loc)
@@ -1037,7 +1041,7 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x348
+.debug_ranges   0x00000000      0x350
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x70 library/ir_rc/ir_remote_nec.o
  .debug_ranges  0x00000070       0x48 library/lcd1602/i2cmaster.o
@@ -1051,7 +1055,7 @@ END GROUP
  .debug_ranges  0x00000258       0x20 library/tricolorled.o
  .debug_ranges  0x00000278       0x50 library/dht.o
  .debug_ranges  0x000002c8       0x40 library/uart.o
- .debug_ranges  0x00000308       0x40 main.o
+ .debug_ranges  0x00000308       0x48 main.o
 
 .debug_macro
  *(.debug_macro)

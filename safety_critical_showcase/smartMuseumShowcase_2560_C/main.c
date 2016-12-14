@@ -14,6 +14,7 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/wdt.h>
 #include <util/delay.h>
 #include <stdlib.h>
 #include "library/uart.h"
@@ -48,7 +49,17 @@ void HandleTempHum();//get temperature and humidity value from DHT11 every 1 sec
 unsigned char HandleRFID(); // control locker servo according to RFID, active every 300 ms
 void HandleIR();// change led light according to IR remote controller commands, active every 300 ms
 
+    uint8_t mcusr_mirror __attribute__ ((section (".noinit")));
 
+    void get_mcusr(void) \
+    __attribute__((naked)) \
+    __attribute__((section(".init3")));
+    void get_mcusr(void)
+    {
+	    mcusr_mirror = MCUSR;
+	    MCUSR = 0;
+	    wdt_disable();
+    }
 
 
 int main(void)
@@ -81,14 +92,14 @@ int main(void)
     ir_init();//initialize IR remote controller
 
     LEDLIGHT_Timer4_PWM_ChannelA_Init();//initialize pwm single for led light dimmer
-
+    wdt_enable(WDTO_4S); 
     //USART0_TX_String("initialization finish!!!\n");
     while(1)
     {
         HandleTempHum();//every 10s, check DHT11 and display
         HandleRFID();   //every 1s, check RFID input, unlock/lock locker
         HandleIR();     //every 300 ms, check IR remoter command, new command input will be Handleed to change led light
-
+        wdt_reset(); //feed watchdog
     }
 }
 //set 10ms tick to measure time
